@@ -56,3 +56,4 @@ if (inputInt != 0){
     console.log(message)
     alert(message)
 }
+
