@@ -8,9 +8,9 @@ let sumInput = 0;
 let meanInput = null;
 let i = null;
 let number = null;
-let message = 'Vous n\'avez saisi aucun nombre\O pour terminer la saisie';
+let message = 'Vous n\'avez saisi aucun nombre';
 
-input = prompt('Veuillez saisir un nombre')
+input = prompt('Veuillez saisir un nombre\n pour terminer la saisie')
 inputInt = parseInt(input)
 
 if (inputInt != 0){
