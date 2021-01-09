@@ -1,3 +1,14 @@
+// console.log(car1.repeindre.toString());
+// if (!/[\p{L}-]/.test(newColor)) {
+//     if (!/^[a-z A-Z]+$/.test(newColor)) {
+//         if (!isNaN(newColor)) {
+//             throw 'La couleur ne peut contenir que des lettres'
+//         }
+//         for (let i = 0; i < newColor.length; i++) {
+//             if (!/^[a-z A-Z]+$/.test(newColor[i])) {
+//                 throw 'La couleur ne peut contenir que des lettres'
+//             }
+//         }
 let listInput = [];
 let input = null;
 let inputInt = null;
@@ -13,9 +24,9 @@ let message = 'Vous n\'avez saisi aucun nombre';
 input = prompt('Veuillez saisir un nombre\n0 pour terminer la saisie')
 inputInt = parseInt(input)
 
-if (inputInt != 0){
-    while (inputInt != 0){
-        if (inputInt){
+if (inputInt != 0) {
+    while (inputInt != 0) {
+        if (inputInt) {
             console.log(`Vous venez d'entrer le nombre : ${inputInt}`)
             listInput.push(inputInt)
             sumInput = sumInput + inputInt
@@ -26,21 +37,21 @@ if (inputInt != 0){
             inputInt = parseInt(input)
         }
     }
-    if (listInput.length != 0){
+    if (listInput.length != 0) {
         totalInput = listInput.length
         console.log(listInput)
         minInput = listInput[0]
         maxInput = listInput[0]
-        for ( i = 1 ; i <= totalInput ; i++){
-            if (minInput > listInput[i]){
+        for (i = 1; i <= totalInput; i++) {
+            if (minInput > listInput[i]) {
                 minInput = listInput[i]
             }
-            if (maxInput < listInput[i]){
+            if (maxInput < listInput[i]) {
                 maxInput = listInput[i]
             }
         }
         meanInput = (sumInput / totalInput)
-        if (totalInput == 1){
+        if (totalInput == 1) {
             number = "nombre"
         } else {
             number = "nombres"
